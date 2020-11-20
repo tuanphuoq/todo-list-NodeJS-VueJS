@@ -1,0 +1,31 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "to do list by tuantt base nodeJS + VueJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "start" : "nodemon --inspect index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuanphuoq/todo-list-NodeJS-VueJS.git"
+  },
+  "keywords": [
+    "todo",
+    "nodejs",
+    "vuejs"
+  ],
+  "author": "TuanTT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tuanphuoq/todo-list-NodeJS-VueJS/issues"
+  },
+  "homepage": "https://github.com/tuanphuoq/todo-list-NodeJS-VueJS#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

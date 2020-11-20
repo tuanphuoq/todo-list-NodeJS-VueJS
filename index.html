@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container" id="todo-list">
+        <h3 class="text-center py-4 font-weight-bold">
+            <i class="fa fa-list-ul" aria-hidden="true"></i>
+            ToDo List (NodeJS by TuanTT)
+        </h3>
+        <div class="form-group">
+            <h4>Don't forget the work you have to do !</h4>
+            <div class="my-3 d-flex justify-content-between">
+                <div class="" style="width: 88%;">
+                    <input type="text" name="" id="" class="form-control" placeholder="enter new word have to do...">
+                </div>
+                <div class="" style="width: 10%;">
+                    <button class="btn btn-success">Add</button>
+                </div>
+            </div>
+            <div class="item d-flex justify-content-between">
+                <div class="right">
+                    <input type="checkbox" name="" id="" class="" placeholder="" aria-describedby="helpId">
+                    <span>content</span>
+                </div>
+                <div class="right">
+                    <i class="fa fa-pencil text-warning" aria-hidden="true"></i>
+                    <i class="fa fa-times text-danger" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="item d-flex justify-content-between">
+                <div class="right">
+                    <input type="checkbox" name="" id="" class="" placeholder="" aria-describedby="helpId">
+                    <span>content</span>
+                </div>
+                <div class="right">
+                    <i class="fa fa-pencil text-warning" aria-hidden="true"></i>
+                    <i class="fa fa-times text-danger" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="item d-flex justify-content-between">
+                <div class="right">
+                    <input type="checkbox" name="" id="" class="" placeholder="" aria-describedby="helpId">
+                    <span>content</span>
+                </div>
+                <div class="right">
+                    <i class="fa fa-pencil text-warning" aria-hidden="true"></i>
+                    <i class="fa fa-times text-danger" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).on('change', 'input[type=checkbox]', function() {
+            if ($(this).is(":checked")) {
+                $($(this).next()).css("text-decoration", "line-through")
+            } else {
+                $($(this).next()).css("text-decoration", "none")
+            }
+        })
+    </script>
+</body>
+
+</html>

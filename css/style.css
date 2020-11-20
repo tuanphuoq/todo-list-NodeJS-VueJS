@@ -1,0 +1,15 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier Prime', monospace;
+}
+
+div.form-group{
+    width: 50%;
+    margin: auto;
+}
+div.item{
+    border-bottom: 1px solid gray;
+    margin-top: 15px;
+}
